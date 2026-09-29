@@ -1,10 +1,6 @@
 # Sales Crediting Platform Prototype (with AI-Powered Root Cause Analysis)
 
-A working prototype of a pharma Sales Crediting / Incentive Compensation
-data pipeline -- built to demonstrate the exact stack a role like Pharmaceutical's
-"Sales Crediting Platform" position needs: SQL/Python data engineering,
-business-rule translation, reconciliation frameworks, anomaly detection,
-and a GenAI layer for root-cause analysis and stakeholder reporting.
+This prototype demonstrates a pharma-focused Sales Crediting and Incentive Compensation data pipeline. It showcases the end-to-end stack required for roles in Pharmaceutical Sales Crediting Platforms: SQL/Python-based data engineering, business rule translation, reconciliation frameworks, anomaly detection, and a GenAI layer for root cause analysis and stakeholder reporting.
 
 ## What this demonstrates 
 | client requirement | What's built |
