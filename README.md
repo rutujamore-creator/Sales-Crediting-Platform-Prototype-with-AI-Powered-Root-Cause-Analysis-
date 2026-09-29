@@ -12,14 +12,9 @@ This prototype demonstrates a pharma-focused Sales Crediting and Incentive Compe
 | "Explore practical applications of AI for... anomaly detection, issue identification... operational insights" | `ai_layer.py` -- GenAI root-cause hypotheses + leadership-ready ops summary |
 | "Communicate complex technical and data concepts clearly to non-technical stakeholders" | The AI layer's output is specifically written for an IC/Commercial Ops audience, not engineers |
 
-## Design principle
+## Design Principle
 
-Same discipline as any production data platform: **every number is
-computed and verified in Python before the LLM ever sees it.** The LLM's
-job is strictly to hypothesize root causes and write stakeholder-facing
-narrative -- never to calculate or invent a number. This is critical in
-Incentive Compensation specifically, since crediting errors directly
-affect rep pay -- you cannot let a model "guess" at a dollar figure.
+This prototype follows the same discipline as any production-grade data platform: all metrics are computed and validated in Python before being passed to the LLM. The LLM’s role is limited to hypothesizing root causes and generating stakeholder-facing narratives — never to calculate or invent figures. This safeguard is especially critical in Incentive Compensation, where crediting errors directly impact representative pay. A model must never be allowed to “guess” financial values.
 
 ## Architecture
 
