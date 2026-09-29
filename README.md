@@ -63,13 +63,13 @@ python main.py
 
 No API key? `main.py` still runs the entire pipeline and anomaly
 detection for real, and prints exactly what prompt would be sent to the
-LLM at each step (dry-run mode) -- so you can demo/inspect the full
+LLM at each step (dry-run mode) so you can demo/inspect the full
 design without needing a key.
 
 **Verified output from a test run:** the pipeline correctly caught an
 intentionally broken credit rule (one territory's split summed to 80%,
 not 100%), traced it to 169 affected transactions via the reconciliation
-check, and flagged 48 rep-level and 3 source-system-level anomalies --
+check, and flagged 48 rep-level and 3 source-system-level anomalies
 all from a single `python main.py` run.
 
 ## Porting to PySpark/Databricks
