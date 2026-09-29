@@ -14,7 +14,7 @@ This prototype demonstrates a pharma-focused Sales Crediting and Incentive Compe
 
 ## Design Principle
 
-This prototype follows the same discipline as any production-grade data platform: all metrics are computed and validated in Python before being passed to the LLM. The LLM’s role is limited to hypothesizing root causes and generating stakeholder-facing narratives — never to calculate or invent figures. This safeguard is especially critical in Incentive Compensation, where crediting errors directly impact representative pay. A model must never be allowed to “guess” financial values.
+This prototype follows the same discipline as any production-grade data platform: all metrics are computed and validated in Python before being passed to the LLM. The LLM’s role is limited to hypothesizing root causes and generating stakeholder-facing narratives never to calculate or invent figures. This safeguard is especially critical in Incentive Compensation, where crediting errors directly impact representative pay. A model must never be allowed to “guess” financial values.
 
 ## Architecture
 
