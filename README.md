@@ -16,7 +16,7 @@ and a GenAI layer for root-cause analysis and stakeholder reporting.
 | "Explore practical applications of AI for... anomaly detection, issue identification... operational insights" | `ai_layer.py` -- GenAI root-cause hypotheses + leadership-ready ops summary |
 | "Communicate complex technical and data concepts clearly to non-technical stakeholders" | The AI layer's output is specifically written for an IC/Commercial Ops audience, not engineers |
 
-## Design principle (your best interview talking point)
+## Design principle
 
 Same discipline as any production data platform: **every number is
 computed and verified in Python before the LLM ever sees it.** The LLM's
@@ -93,18 +93,6 @@ onto PySpark, since the client specifically calls out Databricks:
 | `df.groupby(col).sum()` | `df.groupBy(col).sum()` |
 | `df.to_csv(path)` | `df.write.csv(path)` or write to a Delta table |
 
-## How to talk about this project in an interview
 
-> "I built a working prototype of a sales crediting pipeline that takes
-> raw multi-source sales data, applies territory-based credit-split
-> business rules -- including shared territories with partial-credit
-> splits -- and produces a reconciled, rep-level credited output. I built
-> in a validation gate that catches credit rules that don't sum to 100%
-> before they'd silently mis-credit a rep, plus anomaly detection for
-> payout spikes and source-system volume issues. On top of that, I added
-> a GenAI layer that generates root-cause hypotheses and a leadership-
-> ready operational readiness summary -- but critically, the model never
-> calculates a number itself; it only narrates findings that the
-> pipeline has already computed and verified. That distinction matters a
 > lot in Incentive Compensation, where a wrong number directly affects
 > someone's pay."
