@@ -6,9 +6,8 @@ data pipeline -- built to demonstrate the exact stack a role like BMS's
 business-rule translation, reconciliation frameworks, anomaly detection,
 and a GenAI layer for root-cause analysis and stakeholder reporting.
 
-## What this demonstrates (mapped to the JD)
-
-| JD requirement | What's built |
+## What this demonstrates 
+| client requirement | What's built |
 |---|---|
 | "Own day-to-day operations... ensuring accurate, timely and reliable processing of sales crediting" | `etl_pipeline.py` -- full ingest-to-credited-output pipeline |
 | "Translate business requirements, sales crediting rules... into technical requirements" | `apply_credit_split()` -- turns territory credit-split rules (including shared/overlapping territories) into row-level logic |
@@ -85,7 +84,7 @@ all from a single `python main.py` run.
 ## Porting to PySpark/Databricks
 
 Built in pandas for portability, but every transformation maps directly
-onto PySpark, since the JD specifically calls out Databricks:
+onto PySpark, since the client specifically calls out Databricks:
 
 | pandas (this repo) | PySpark/Databricks equivalent |
 |---|---|
